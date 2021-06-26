@@ -18,14 +18,19 @@ const{
   addPhoto,
     photoHandler,
     createUser,
-    deletephoto
+    deletePhoto
 }=require('./module/dbForHomeAndMyPhoto');
 
 // createUser();
 
 ////http://localhost:3010/deletephoto?email
 
-server.delete('/deletephoto/:index',deletephoto)
+// server.delete('/deletephoto/:index',deletephoto)
+
+////http://localhost:3010/deletephoto?email
+
+server.delete('/deletephoto/:index', deletePhoto);
+
 
 
 
